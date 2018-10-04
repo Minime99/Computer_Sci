@@ -34,7 +34,7 @@ while i < 6:
 x = 1
 while (x != 10):
     x = int(input("say a number"))
-
+# first look at random logic need to import as without it python will not know what random is
 import random
 
 print(random.randint(1, 10))
