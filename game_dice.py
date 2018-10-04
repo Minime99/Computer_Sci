@@ -1,3 +1,4 @@
+# test game to see random logic
 import random
 
 while(True):
