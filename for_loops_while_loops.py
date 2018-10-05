@@ -11,7 +11,7 @@ for x in fruits:
 for x in "banana":
     print(x)
 
-# putting break in will make it end at "banana"
+# putting break in will make it end at "banana" so only apple will be printed
 fruits = ["apple", "banana", "cherry"]
 for x in fruits:
     if x == "banana":

@@ -5,7 +5,7 @@ else:
     print('odd')
 
 x = 42
-if x % 2 == 0:
+if x % 2 == 0:  # the % symbol means the Remainder of
     print('even')
 else:
     print('odd')
