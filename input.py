@@ -2,7 +2,7 @@
 inputnumber = input("what is the number?")
 outputnumber = ''
 for c in inputnumber:
-    s = int(c)**2
+    s = int(c)**2  # ** means to the power
     outputnumber = outputnumber + str(s)
     print(s)
 
