@@ -6,7 +6,7 @@ for c in inputnumber:
     outputnumber = outputnumber + str(s)
     print(s)
 
-
+# takes the numbers inputed and then gives the product (*)
 number1 = input("Firstnumber?")
 number2 = input("Secondnumber?")
 product = int(number1)*int(number2)
