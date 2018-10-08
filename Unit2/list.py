@@ -17,3 +17,4 @@ x = input("what is your name?")
 if x in thisdict:
     print(thisdict[x])
 else:
+    print("who are you?")
