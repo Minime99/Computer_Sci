@@ -33,6 +33,12 @@ while (True):
         break
 
 # basic caculator
+
+
+def add(num1, num2):
+    return num1+num2
+
+
 print("Select operation.")
 print("1.Add")
 print("2.Subtract")
