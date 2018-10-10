@@ -13,3 +13,36 @@ else:
 x = input("what is your name?")  # if what you input is "noah" then your last name is Fedosoff
 if x == "noah":
     print("your last name is Fedosoff")
+else:
+    print("who are you?")
+
+food = "spam"
+if food == "spam":
+    print("ummm, my favorite!")
+    print("I feel like saying it 100 times")
+    print(100 * (food + "! "))
+
+food = "cookies"
+if food == "spam":
+    print("ummm, my favorite!")
+else:
+    print("i must have spam!")
+
+x = 43
+y = 43
+
+if x < y:
+    print("what?")
+elif x > y:
+    print("really?")
+else:
+    print("they are the same!")
+
+print("a or b?")
+choice = input("what do you choose?")
+if choice == "a":
+    print("you said a")
+elif choice == "b":
+    print("you said b")
+else:
+    print("no")
