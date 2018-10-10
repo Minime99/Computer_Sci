@@ -46,3 +46,7 @@ elif choice == "b":
     print("you said b")
 else:
     print("no")
+x = 6
+if 0 < x:
+    if x > 10:
+        print("x is a positive single digit")
