@@ -16,7 +16,7 @@ if x == "noah":
 else:
     print("who are you?")
 
-food = "spam" #more in depth look at if
+food = "spam" #more in depth look at if (for more information see 4.1-4.3)
 if food == "spam":
     print("ummm, my favorite!")
     print("I feel like saying it 100 times")
