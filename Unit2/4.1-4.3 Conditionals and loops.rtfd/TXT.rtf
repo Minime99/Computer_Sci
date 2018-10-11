@@ -1,0 +1,95 @@
+4. Conditionals and loops¶
+4.1. Conditional execution¶
+4.1.1. The if statement¶
+In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. Conditional statements give us this ability. The simplest form is the if statement, which has the genaral form:
+if BOOLEAN EXPRESSION:
+    STATEMENTS
+A few important things to note about if statements:
+	1	The colon (:) is significant and required. It separates the header of the compound statement from the body.
+	2	The line after the colon must be indented. It is standard in Python to use four spaces for indenting.
+	3	All lines indented the same amount after the colon will be executed whenever the BOOLEAN_EXPRESSION is true.
+Here is an example:
+food = 'spam'
+
+if food == 'spam':
+    print('Ummmm, my favorite!')
+    print('I feel like saying it 100 times...')
+    print(100 * (food + '! '))
+The boolean expression after the if statement is called the condition. If it is true, then all the indented statements get executed. What happens if the condition is false, and food is not equal to 'spam'? In a simple if statement like this, nothing happens, and the program continues on to the next statement.
+Run this example code and see what happens. Then change the value of food to something other than 'spam' and run it again, confirming that you don’t get any output.
+Flowchart of an if statement
+￼
+As with the for statement from the last chapter, the if statement is a compound statement. Compound statements consist of a header line and a body. The header line of the if statement begins with the keyword if followed by a boolean expression and ends with a colon (:).
+The indented statements that follow are called a block. The first unindented statement marks the end of the block. Each statement inside the block must have the same indentation.
+Indentation and the PEP 8 Python Style Guide
+The Python community has developed a Style Guide for Python Code, usually referred to simply as “PEP 8”. The Python Enhancement Proposals, or PEPs, are part of the process the Python community uses to discuss and adopt changes to the language.
+PEP 8 recommends the use of 4 spaces per indentation level. We will follow this (and the other PEP 8 recommendations) in this book.
+To help us learn to write well styled Python code, there is a program called pep8 that works as an automatic style guide checker for Python source code. pep8 is installable as a package on Debian based GNU/Linux systems like Ubuntu.
+In the Vim section of the appendix, Configuring Ubuntu for Python Web Development, there is instruction on configuring vim to run pep8 on your source code with the push of a button.
+4.1.2. The if else statement¶
+It is frequently the case that you want one thing to happen when a condition it true, and something else to happen when it is false. For that we have the if else statement.
+if food == 'spam':
+    print('Ummmm, my favorite!')
+else:
+    print("No, I won't have it. I want spam!")
+Here, the first print statement will execute if food is equal to 'spam', and the print statement indented under the else clause will get executed when it is not.
+Flowchart of a if else statement
+￼
+The syntax for an if else statement looks like this:
+if BOOLEAN EXPRESSION:
+    STATEMENTS_1        # executed if condition evaluates to True
+else:
+    STATEMENTS_2        # executed if condition evaluates to False
+Each statement inside the if block of an if else statement is executed in order if the boolean expression evaluates to True. The entire block of statements is skipped if the boolean expression evaluates to False, and instead all the statements under the else clause are executed.
+There is no limit on the number of statements that can appear under the two clauses of an if else statement, but there has to be at least one statement in each block. Occasionally, it is useful to have a section with no statements (usually as a place keeper, or scaffolding, for code you haven’t written yet). In that case, you can use the pass statement, which does nothing except act as a placeholder.
+if True:          # This is always true
+    pass          # so this is always executed, but it does nothing
+else:
+    pass
+Python terminology
+Python documentation sometimes uses the term suite of statements to mean what we have called a block here. They mean the same thing, and since most other languages and computer scientists use the word block, we’ll stick with that.
+Notice too that else is not a statement. The if statement has two clauses, one of which is the (optional) else clause. The Python documentation calls both forms, together with the next form we are about to meet, the if statement.
+4.2. Chained conditionals¶
+Sometimes there are more than two possibilities and we need more than two branches. One way to express a computation like that is a chained conditional:
+if x < y:
+    STATEMENTS_A
+elif x > y:
+    STATEMENTS_B
+else:
+    STATEMENTS_C
+Flowchart of this chained conditional
+￼
+elif is an abbreviation of else if. Again, exactly one branch will be executed. There is no limit of the number of elif statements but only a single (and optional) final else statement is allowed and it must be the last branch in the statement:
+if choice == 'a':
+    print("You chose 'a'.")
+elif choice == 'b':
+    print("You chose 'b'.")
+elif choice == 'c':
+    print("You chose 'c'.")
+else:
+    print("Invalid choice.")
+Each condition is checked in order. If the first is false, the next is checked, and so on. If one of them is true, the corresponding branch executes, and the statement ends. Even if more than one condition is true, only the first true branch executes.
+4.3. Nested conditionals¶
+One conditional can also be nested within another. (It is the same theme of composibility, again!) We could have written the previous example as follows:
+Flowchart of this nested conditional
+￼
+if x < y:
+    STATEMENTS_A
+else:
+    if x > y:
+        STATEMENTS_B
+    else:
+        STATEMENTS_C
+The outer conditional contains two branches. The second branch contains another if statement, which has two branches of its own. Those two branches could contain conditional statements as well.
+Although the indentation of the statements makes the structure apparent, nested conditionals very quickly become difficult to read. In general, it is a good idea to avoid them when you can.
+Logical operators often provide a way to simplify nested conditional statements. For example, we can rewrite the following code using a single conditional:
+if 0 < x:            # assume x is an int here
+    if x < 10:
+        print("x is a positive single digit.")
+The print function is called only if we make it past both the conditionals, so we can use the and operator:
+if 0 < x and x < 10:
+    print("x is a positive single digit.")
+Note
+Python actually allows a short hand form for this, so the following will also work:
+if 0 < x < 10:
+    print("x is a positive single digit.")
