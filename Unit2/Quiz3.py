@@ -15,7 +15,7 @@ a = (1, 2, 3)
 print(a[1])
 # can not be changed
 print(len(a))
-# you would use a tuple is you never wanted a list of things to change
+# you would use a tuple if you never wanted a list of things to change
 
 # sets # REVIEW:
 x = {1, 5, 4}
