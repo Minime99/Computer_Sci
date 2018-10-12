@@ -18,3 +18,7 @@ if x in thisdict:
     print(thisdict[x])
 else:
     print("who are you?")
+
+# permutations are fun
+import itertools
+print([x for x in itertools.permutations("because")])

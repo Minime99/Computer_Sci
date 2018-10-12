@@ -12,6 +12,7 @@ print(len(thislist))
 
 # tuple # REVIEW:
 a = (1, 2, 3)
+print(a)
 print(a[1])
 # can not be changed
 print(len(a))
