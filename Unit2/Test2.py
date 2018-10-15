@@ -17,6 +17,25 @@ elif x > 10:
    x % y	        Remainder of x / y
    x ** y	        x to the y power
 """
+
+# strings
+"""
+x = "abcdefg"
+x[1] gives "b"
+x[2:5] gives "cde"
+len(x) gives 7
+x.upper() gives "ABCDEFG"
+x.replace("a", "9") gives "9bcdefg"
+"""
+# lists
+"""
+x = ["apples","bananas","carrots"]
+x[1] is "bananas" as apples is really 0 in the list
+tuples
+set
+dictionaries
+"""
+
 x = str(12)
 y = str(13)
 print(x + y)
