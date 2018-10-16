@@ -75,4 +75,4 @@ print(x[3:6])
 # 9.
 x = input("10 letters pls")
 print(x)
-print(x[5:10])
+print(x[5:10])  # needs something else
