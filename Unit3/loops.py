@@ -19,3 +19,7 @@ fruits = ["apple", "banana", "cherry"]
 for x in adj:
     for y in fruits:
         print(x, y)
+
+for x in range(1, 6):
+    for y in range(1, 6):
+        print(x, "times", y, "is", x*y)
