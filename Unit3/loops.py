@@ -23,3 +23,10 @@ for x in adj:
 for x in range(1, 6):
     for y in range(1, 6):
         print(x, "times", y, "is", x*y)
+total = 0
+for x in range(1, 1001):
+    if x % 3 == 0:
+        total = total+x
+    elif x % 5 == 0:
+        total = total+x
+print(total)
