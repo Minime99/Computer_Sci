@@ -31,7 +31,31 @@ for x in range(1000):
         print(total)
 print(total)
 
-numbes = []
+numbers = []
 for x in range(1000):
     if x%3 == 0 or x%5 == 0:
         print(x)
+
+
+'''Day 2'''
+
+#For Loop
+for x in range(1,201):
+    if x%6 == 0:
+        print(x)
+#The For and While Loop are equivalent
+#While Loop
+x = 1
+while x<201:
+    if x%6 == 0:
+        print(x)
+    x=x+1
+
+#Dice Rolling
+import random               #Add a random number capability
+x=random.randint(1,6)       #Random number between 1 and 6
+#if x!=6:
+#    repeat roll            #This is the pseudo code version
+while x!=6:
+    x=random.randint(1,6)
+    print(x)
