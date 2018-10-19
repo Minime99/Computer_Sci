@@ -30,3 +30,16 @@ for x in range(1, 1001):
     elif x % 5 == 0:
         total = total+x
 print(total)
+
+# # NOTE:
+# for loop
+total = 0
+for x in range(1, 201):
+    if x % 6 == 0:
+        print(x)
+# while loop
+x = 1
+while x < 201:  # as long as this is true
+    if x % 6 == 0:
+        print(x)
+    x = x+1
