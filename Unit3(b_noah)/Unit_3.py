@@ -59,3 +59,12 @@ x=random.randint(1,6)       #Random number between 1 and 6
 while x!=6:
     x=random.randint(1,6)
     print(x)
+
+import random
+magicnumber=random.randint(1,10)
+x=input('Guess my magic number')
+while x!=magicnumber:
+    print('Nope. Try again!')
+if x==magicnumber:
+    print('Wow that was a good guess!')
+break
