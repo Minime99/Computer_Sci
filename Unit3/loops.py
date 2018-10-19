@@ -43,3 +43,47 @@ while x < 201:  # as long as this is true
     if x % 6 == 0:
         print(x)
     x = x+1
+# # QUESTION:
+
+for i in range(5):
+    print("hello world")
+    print("there")
+
+for i in range(1, 11):
+    print(i)
+
+for i in range(10):
+    print(i)
+
+for i in range(2, 100, 3):
+    print(i)
+
+for i in range(0, 10, 1):
+    print(i)
+
+for i in range(10, 0, -1):
+    print(i)
+
+for i in range(3):
+    print("a")
+
+a = 0
+for i in range(10):
+    a = a + 1
+print(a)
+
+a = 0
+for i in range(10):
+    a = a + 1
+    for j in range(10):
+        a = a + 1
+print(a)
+
+i = 0
+while i < 10:
+    print(i)
+    i = i+1
+
+quit = "n"
+while quit == "n":
+    quit = input("do you want to quit? ")
