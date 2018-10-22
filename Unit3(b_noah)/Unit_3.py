@@ -65,6 +65,16 @@ magicnumber=random.randint(1,10)
 x=input('Guess my magic number')
 while x!=magicnumber:
     print('Nope. Try again!')
+    break
 if x==magicnumber:
     print('Wow that was a good guess!')
+    break
 break
+
+
+'''Day 3'''
+
+x = input('What is your favorite number?')
+print('You chose', x)
+try:
+    print('Half of it is',x/2)
