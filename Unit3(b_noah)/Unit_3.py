@@ -74,7 +74,21 @@ break
 
 '''Day 3'''
 
+#Try and Except
 x = input('What is your favorite number?')
 print('You chose', x)
+x = int(x)
 try:
-    print('Half of it is',x/2)
+    print('Half of it is',x/2)                  #Cannot take half a str
+except TypeError:
+    print('Type a number, fool')
+
+#We need to import 'math' to do square roots
+import math
+print(math.sqrt(64))
+
+import math
+try:
+    print(math.sqrt(0/0))
+except ZeroDivisionError:
+    print("Can't divide by zero")
