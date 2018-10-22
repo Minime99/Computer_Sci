@@ -95,9 +95,22 @@ sol2 = (-b+cmath.sqrt(d))/(2*a)
 print('The solutions are {0} and {1}'.format(sol1, sol2))
 
 '''Connect 4 Game'''
+firstrow = ["{} {} {} {} {} {} {}"]
+secondrow = ["{} {} {} {} {} {} {}"]
+thirdrow = ["{} {} {} {} {} {} {}"]
+fourthrow = ["{} {} {} {} {} {} {}"]
+fifthrow = ["{} {} {} {} {} {} {}"]
+sixthrow = ["{} {} {} {} {} {} {}"]
 
-x = ["{} {} {} {} {} {} {}"]
-print(x)
+
+print(
+    firstrow
+    secondrow
+    thirdrow
+    fourthrow
+    sixthrow
+)
+select = input("select where to put x in")
 
 
 print('You win!')
