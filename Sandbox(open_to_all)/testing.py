@@ -99,6 +99,16 @@ try:
 except ValueError:
     print("this is not a number")
 
+age = int(input("how old are you?"))
+name = input("what is your name?")
+year = str((2018-age)+100)
+print(name + "you will be 100 in the year" + year)
+total = 0
+
+num = int(input("give me a number"))
+repeat = num
+product = sum(num*10**n for n in range(repeat))
+print(product)
 
 '''Connect 4 Game'''
 
