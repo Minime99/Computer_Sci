@@ -38,7 +38,7 @@ except:
     print('You were asked to type a number')
     print('Setting threshold to 10')
     threshold = 10
-finally:                                                 #This is not neccessary
+finally: #This is not neccessary
     while threshold>0:
         print(threshold)
         threshold = threshold-1
@@ -47,7 +47,7 @@ finally:                                                 #This is not neccessary
 
 #8
 threshold = int(input('Type in a number'))
-threshold = []
-for x in range(1000):
-    if x%3 == 0 or x%5 == 0:
-        print(x)
+sum = 0 #Running total, will change as we count up
+for x in range(2, threshold, 2): #Counts through even numbers
+    sum = sum+x #Adds each number to the total
+print(sum)
