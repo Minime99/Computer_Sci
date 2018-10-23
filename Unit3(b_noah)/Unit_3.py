@@ -73,8 +73,8 @@ break
 
 
 '''Day 3'''
+#Try, Except, and Finally
 
-#Try and Except
 x = input('What is your favorite number?')
 print('You chose', x)
 x = int(x)
@@ -92,3 +92,17 @@ try:
     print(math.sqrt(0/0))
 except ZeroDivisionError:
     print("Can't divide by zero")
+
+try:
+    x=float(input('Give me a number to divide 7 by'))
+    print(7/x)
+except ZeroDivisionError:
+    print("Can't divide by 0")
+except ValueError:
+    print("Can't divide by a string")
+finally:                                          #Runs no matter what
+    print('Program over')
+
+x = float(input('Give me a positive number'))
+if x < 0:
+    raise Exception('Sorry, no numbers below zero') #What the user sees
