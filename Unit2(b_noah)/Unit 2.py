@@ -38,18 +38,18 @@ while (x != 10):
 
 
 import random
-print(random.randint(1,10))
+print(random.randint(1, 10))
 
 
 import random
-print(random.randint(1,6))
-print(random.randint(1,6))
+print(random.randint(1, 6))
+print(random.randint(1, 6))
 
 
 import random
 while(True):
-    dice1 = random.randint(1,6)
-    dice2 = random.randint(1,6)
+    dice1 = random.randint(1, 6)
+    dice2 = random.randint(1, 6)
     print(dice1)
     print(dice2)
     if dice1 != dice2:
@@ -77,7 +77,7 @@ print(outputnumber)
 
 '''Day 4 (Wed Oct 10)'''
 
-food = 'spam' #variable is <type:'str'>
+food = 'spam'  # variable is <type:'str'>
 if food == 'spam':
     print('Ummmm, my favorite!')
     print('I feel like saying it 100 times...')
@@ -98,8 +98,8 @@ else:
     print("No, I won't have it. I want spam!")
 
 
-x=8
-y=7
+x = 8
+y = 7
 if x < y:
     print('x is smaller than y.')
 elif x > y:
@@ -126,12 +126,11 @@ if 1 < x:            # assume x is an int here
         print("x is a positive single digit.")
 
 
-
-x = input ('Pick a number')
-x = int(x) #Casting the variable from string to int
-if x<10:
+x = input('Pick a number')
+x = int(x)  # Casting the variable from string to int
+if x < 10:
     print('smaller')
-elif x>10:
+elif x > 10:
     print('larger')
 else:
     print('equal')

@@ -91,26 +91,16 @@ d = (b**2) - (4*a*c)
 # find two solutions
 sol1 = (-b-cmath.sqrt(d))/(2*a)
 sol2 = (-b+cmath.sqrt(d))/(2*a)
-
 print('The solutions are {0} and {1}'.format(sol1, sol2))
 
+try:
+    x = int(input("give me a number between 1 and 7"))
+    print(x + 1)
+except ValueError:
+    print("this is not a number")
+
+
 '''Connect 4 Game'''
-firstrow = ["{} {} {} {} {} {} {}"]
-secondrow = ["{} {} {} {} {} {} {}"]
-thirdrow = ["{} {} {} {} {} {} {}"]
-fourthrow = ["{} {} {} {} {} {} {}"]
-fifthrow = ["{} {} {} {} {} {} {}"]
-sixthrow = ["{} {} {} {} {} {} {}"]
-
-
-print(
-    firstrow
-    secondrow
-    thirdrow
-    fourthrow
-    sixthrow
-)
-select = input("select where to put x in")
 
 
 print('You win!')
