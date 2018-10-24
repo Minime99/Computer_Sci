@@ -106,3 +106,32 @@ finally:                                          #Runs no matter what
 x = float(input('Give me a positive number'))
 if x < 0:
     raise Exception('Sorry, no numbers below zero') #What the user sees
+
+
+'''Day 4'''
+#def and return
+def my_function():
+    print('Hello from inside my function')
+my_function()
+
+def double_it(x):
+    return 2 * x
+print(double_it(3))
+print(double_it(5))
+print(double_it(9))
+
+def my_function(first_name):
+    print(first_name + ' should probably have a last name too')
+my_function('Emil')
+my_function('Tobias')
+my_function('Linus')
+
+def convert_to_celsius(fahrenheit):
+    return (fahrenheit-32)*5/9
+fahrenheit = float(input('Enter temp in fahrenheit'))
+print(convert_to_celsius(fahrenheit))
+
+def convert_to_celsius(fahrenheit):
+    return (fahrenheit-32)*5/9
+for x in range(30,50,2):
+    print(x, 'fahrenheit is', convert_to_celsius(x), 'C')
