@@ -110,6 +110,13 @@ repeat = num
 product = sum(num*10**n for n in range(repeat))
 print(product)
 
+# tic tac toe
+game = [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]]
+print(game)
+
+
 '''Connect 4 Game'''
 
 
