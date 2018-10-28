@@ -1,3 +1,4 @@
+
 # place to try out new or random code
 """Operation	What it returns
 
@@ -109,6 +110,11 @@ num = int(input("give me a number"))
 repeat = num
 product = sum(num*10**n for n in range(repeat))
 print(product)
+
+nn = int(input("pls give a natural number"))
+for x in range(1, nn+1):
+    print(x)
+
 
 # tic tac toe
 game = [[0, 0, 0],
