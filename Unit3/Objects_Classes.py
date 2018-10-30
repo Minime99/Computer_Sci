@@ -50,7 +50,7 @@ class Dog:
         self.shots = ["rabies", "lepto", "cancer"]
 
     def __str__(self):
-        return(self.breed+""+str(self.age))
+        return(self.breed+" "+str(self.age))
 
 
 Betsey = Dog()
