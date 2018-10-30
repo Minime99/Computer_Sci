@@ -135,3 +135,50 @@ def convert_to_celsius(fahrenheit):
     return (fahrenheit-32)*5/9
 for x in range(30,50,2):
     print(x, 'fahrenheit is', convert_to_celsius(x), 'C')
+
+
+'''Day 5'''
+
+#Unofficial but easier way to do it
+class Pizza:
+    crust = 'regular'
+    sauce = 'tomato'
+    cheese = 'mozzarella'
+    toppings = ['pepperoni', 'bacon', 'meatballs']
+    def order(self):
+        print('The pizza has been ordered')
+
+class Pizza:
+    crust = 'regular'
+    sauce = 'tomato'
+    cheese = 'mozzarella'
+    toppings = ['pepperoni', 'bacon', 'meatballs']
+    def order(self):
+        print('The pizza has been ordered')
+noahs_standard_pizza = Pizza()
+noahs_favorite_pizza = Pizza()
+noahs_favorite_pizza.crust = 'stuffed crust'
+noahs_favorite_pizza.toppings.append('extra cheese')
+
+#Official Way to do it
+class Pizza:
+    def __init__(self):             #Double underscore means 'Run this code each time an object is made'
+        self.crust = 'regular'
+        self.sauce = 'tomato'
+        self.cheese = 'mozzarella'
+        self.toppings = ['pepperoni', 'bacon', 'meatballs']
+    def order(self):
+        print('The pizza has been ordered')
+
+class Dog:
+    def __init__(self):
+        self.breed = 'Samoyede'
+        self.age = 7
+    def order(self):
+        print('This is your dog')
+luna = Dog()
+tundra = Dog()
+tundra.breed = 'Husky'
+tundra.age = 12
+print('Luna is a', luna.breed, 'and is', luna.age, 'years old.')
+print('Tundra is a', tundra.breed, 'and is', tundra.age, 'years old.')
