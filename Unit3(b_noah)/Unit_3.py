@@ -182,3 +182,57 @@ tundra.breed = 'Husky'
 tundra.age = 12
 print('Luna is a', luna.breed, 'and is', luna.age, 'years old.')
 print('Tundra is a', tundra.breed, 'and is', tundra.age, 'years old.')
+
+
+class Dog:
+    def __init__(self):
+        self.age = 0
+        self.breed = 'unknown'
+    def ruff(self):
+        print('Ruff!')
+luna = Dog()
+print(luna.age, luna.breed)
+luna.age = 7
+luna.breed = 'Samoyede'
+print(luna.age, luna.breed)
+luna.ruff
+
+
+'''Day 6'''
+
+class Dog:
+    def __init__(self, age, breed, name):
+        self.age = age
+        self.breed = breed
+        self.name = name
+    def ruff(self):
+        print('Ruff!')
+dog1 = Dog(7, 'Samoyede', 'Luna')
+print(dog1.age, dog1.breed, dog1.name)
+dog1.age = 8
+dog1.breed = 'Husky'
+dog1.name = 'Tundra'
+print(dog1.age, dog1.breed, dog1.name)
+dog1.ruff()
+
+
+class Dog:                                      #This doesnt work yet
+    def __init__(self, age, breed, name):
+        self.age = age
+        self.breed = breed
+        self.name = name
+    def ruff(self):
+        print('Ruff!')
+    def get_info(self):
+        print(self.age, self.breed, self.name)
+class Samoyede(Dog):
+    def __init__(self, age, breed, name):
+        Dog.__init__(self, age, breed, name)
+    def beSmart(self):
+        print('E equals m c squared')
+dog1 = Samoyede(7, 'Samoyede', 'Luna')
+dog1.ruff()
+dog1.beSmart()
+dog2 = Dog(8, 'Husky', 'Tundra')
+dog1.get_info()
+dog2.get_info()
