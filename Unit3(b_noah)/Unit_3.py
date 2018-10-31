@@ -233,6 +233,6 @@ class Samoyede(Dog):
 dog1 = Samoyede(7, 'Samoyede', 'Luna')
 dog1.ruff()
 dog1.beSmart()
-dog2 = Dog(8, 'Husky', 'Tundra')
+dog2 = Husky(8, 'Husky', 'Tundra')
 dog1.get_info()
 dog2.get_info()
