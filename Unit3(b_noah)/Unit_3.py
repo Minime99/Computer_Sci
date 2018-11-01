@@ -135,3 +135,104 @@ def convert_to_celsius(fahrenheit):
     return (fahrenheit-32)*5/9
 for x in range(30,50,2):
     print(x, 'fahrenheit is', convert_to_celsius(x), 'C')
+
+
+'''Day 5'''
+
+#Unofficial but easier way to do it
+class Pizza:
+    crust = 'regular'
+    sauce = 'tomato'
+    cheese = 'mozzarella'
+    toppings = ['pepperoni', 'bacon', 'meatballs']
+    def order(self):
+        print('The pizza has been ordered')
+
+class Pizza:
+    crust = 'regular'
+    sauce = 'tomato'
+    cheese = 'mozzarella'
+    toppings = ['pepperoni', 'bacon', 'meatballs']
+    def order(self):
+        print('The pizza has been ordered')
+noahs_standard_pizza = Pizza()
+noahs_favorite_pizza = Pizza()
+noahs_favorite_pizza.crust = 'stuffed crust'
+noahs_favorite_pizza.toppings.append('extra cheese')
+
+#Official Way to do it
+class Pizza:
+    def __init__(self):             #Double underscore means 'Run this code each time an object is made'
+        self.crust = 'regular'
+        self.sauce = 'tomato'
+        self.cheese = 'mozzarella'
+        self.toppings = ['pepperoni', 'bacon', 'meatballs']
+    def order(self):
+        print('The pizza has been ordered')
+
+class Dog:
+    def __init__(self):
+        self.breed = 'Samoyede'
+        self.age = 7
+    def order(self):
+        print('This is your dog')
+luna = Dog()
+tundra = Dog()
+tundra.breed = 'Husky'
+tundra.age = 12
+print('Luna is a', luna.breed, 'and is', luna.age, 'years old.')
+print('Tundra is a', tundra.breed, 'and is', tundra.age, 'years old.')
+
+
+class Dog:
+    def __init__(self):
+        self.age = 0
+        self.breed = 'unknown'
+    def ruff(self):
+        print('Ruff!')
+luna = Dog()
+print(luna.age, luna.breed)
+luna.age = 7
+luna.breed = 'Samoyede'
+print(luna.age, luna.breed)
+luna.ruff
+
+
+'''Day 6'''
+
+class Dog:
+    def __init__(self, age, breed, name):
+        self.age = age
+        self.breed = breed
+        self.name = name
+    def ruff(self):
+        print('Ruff!')
+dog1 = Dog(7, 'Samoyede', 'Luna')
+print(dog1.age, dog1.breed, dog1.name)
+dog1.age = 8
+dog1.breed = 'Husky'
+dog1.name = 'Tundra'
+print(dog1.age, dog1.breed, dog1.name)
+dog1.ruff()
+
+
+class Dog:                                      #This doesnt work yet
+    def __init__(self, age, breed, name):
+        self.age = age
+        self.breed = breed
+        self.name = name
+    def ruff(self):
+        print('Ruff!')
+    def get_info(self):
+        print(self.age, self.breed, self.name)
+class Samoyede(Dog):
+    def __init__(self, age, breed, name):
+        Dog.__init__(self, age, breed, name)
+    def beSmart(self):
+        print('E equals m c squared')
+dog1 = Samoyede(7, 'Samoyede', 'Luna')
+dog1.ruff()
+dog1.beSmart()
+dog2 = Husky(8, 'Husky', 'Tundra')
+dog1.get_info()
+dog2.get_info()

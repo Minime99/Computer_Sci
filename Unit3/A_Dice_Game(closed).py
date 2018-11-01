@@ -1,3 +1,5 @@
+# # HACK:
+"""
 import random
 
 
@@ -29,3 +31,4 @@ elif dice1 + dice2 == 2:
     dice_total = 0
 else:
     dice_total = dice1 + dice2
+"""

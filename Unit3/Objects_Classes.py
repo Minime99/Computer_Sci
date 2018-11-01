@@ -29,28 +29,31 @@ donal.order()
 
 
 class pizza:
-    def __init__(self):
-        self.crust = "regular"
-        self.sauce = "tomato"
-        self.cheese = "mozzarella"
-        self.toppings = ["pepperoni", "mushrooms", "green peppers"]
+    def __init__(self, crust, sauce, cheese, toppings):
+        self.crust = crust
+        self.sauce = sauce
+        self.cheese = cheese
+        self.toppings = toppings
 
-    def order(self):
-        print("the pizza has been ordered")
+    def __str__(self):
+        return (" your crust is: "+str(self.crust)+" your sauce is: "+str(self.sauce)+" your cheese is: "+str(self.cheese)+" your toppings: "+str(self.toppings))
 
 
-noah = pizza()
-print(noah.crust)
+pizza1 = pizza("thin", "red", "fake", "bacon")
+print(pizza1)
 
 
 class Dog:
-    def __init__(self):
-        self.age = 0
-        self.breed = "unkown"
-        self.shots = ["rabies", "lepto", "cancer"]
+    def __init__(self, breed, age, name):
+        self.age = age
+        self.breed = breed
+        self.name = name
 
     def __str__(self):
-        return(self.breed+" "+str(self.age))
+        return (" your dog's breed is: "+str(self.breed)+" your dog's age is: "+str(self.age)+" your dog's name is: "+str(self.name))
 
 
-Betsey = Dog()
+dog1 = Dog("cockapoo", "10", "Betsey")
+x = input("what is your dog's name?")
+if x == "Betsey":
+    print(dog1)
