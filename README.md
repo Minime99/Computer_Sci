@@ -1,2 +1,2 @@
 # Computer_Sci.
-Things to keep in mind when using this Repo.
+Class notes for keeping up to date with work.
