@@ -15,6 +15,10 @@ class Car:
             print('Wow great price! Definetely gonna buy this!')
     def rev(self):
         print('VROOOOOM!')
+    def showme(self):
+        print(__init__)
+        print(pricing)
+        print(rev)
 
 class Car1(Car):
     def __init__(self, make, model, year):
@@ -28,7 +32,12 @@ class Car1(Car):
         if car1<25000:
             print('Wow great price! Definetely gonna buy this!')
     def rev(self):
-            print('VROOOOOM')
+        print('VROOOOOM')
+    def showme(self):
+        print(__init__)
+        print(pricing)
+        print(rev)
+
 
 class Car2(Car):
     def __init__(self, make, model, year):
@@ -43,6 +52,10 @@ class Car2(Car):
             print('Wow great price! Definetely gonna buy this!')
     def rev(self):
         print('VROOOOOM')
+    def showme(self):
+        print(__init__)
+        print(pricing)
+        print(rev)
 
 question = input('What car would you like to know about?')
 if question == 'Mustang':
