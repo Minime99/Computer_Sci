@@ -169,6 +169,12 @@ class Pizza:
         self.toppings = ['pepperoni', 'bacon', 'meatballs']
     def order(self):
         print('The pizza has been ordered')
+noahs_favorite_pizza = Pizza()
+print(noahs_favorite_pizza.crust)
+print(noahs_favorite_pizza.sauce)
+print(noahs_favorite_pizza.cheese)
+print(noahs_favorite_pizza.toppings)
+print(noahs_favorite_pizza.order())
 
 class Dog:
     def __init__(self):
