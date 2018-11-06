@@ -242,3 +242,64 @@ dog1.beSmart()
 dog2 = Husky(8, 'Husky', 'Tundra')
 dog1.get_info()
 dog2.get_info()
+
+
+'''Day 7'''
+
+import datetime
+x = datetime.datetime.now()
+print(x)
+
+import datetime
+x = datetime.datetime.now()
+print(x.year)
+print(x.strftime("%A"))
+
+import datetime
+x = datetime.datetime(2020, 5, 17)
+print(x)
+
+import datetime
+x = datetime.datetime(2018, 6, 1)
+print(x.strftime("%B"))
+
+import time
+import datetime
+print('Time in seconds since the epoch: %s' %time.time())
+print('Current date and time: ' , datetime.datetime.now())
+print('Or like this: '
+,datetime.datetime.now().strftime('%y­%m­%d­%H­%M'))
+print('Current year: ', datetime.date.today().strftime('%Y'))
+print('Month of year: ', datetime.date.today().strftime('%B'))
+print('Week number of the year: ',
+datetime.date.today().strftime('%W'))
+print('Weekday of the week: ',
+datetime.date.today().strftime('%w'))
+print('Day of year: ', datetime.date.today().strftime('%j'))
+print('Day o/f the month : ',
+datetime.date.today().strftime('%d'))
+print('Day of week: ', datetime.date.today().strftime('%A'))
+
+import datetime
+import time
+print('Times:')
+t1 = datetime.time(12, 55, 0)
+print('\tt1:', t1)
+t2 = datetime.time(13, 5, 0)
+print('\tt2:', t2)
+print('\tt1 < t2:', t1 < t2)
+print('Dates:')
+d1 = datetime.date.today()
+print('\td1:', d1)
+d2 = datetime.date.today() + datetime.timedelta(days=1)
+print('\td2:', d2)
+print('\td1 > d2:', d1 > d2)
+$ python datetime_comparing.py
+
+def add(number1,number2):
+    return number1+number2
+print(add(4,5))
+
+def substract(number1,number2):
+    return number1-number2
+print(substract(5,4))
