@@ -1,0 +1,13 @@
+#1
+def multiply(number1,number2):
+    return number1*number2
+print(multiply(5,4))
+
+#2
+def substract(number1, number2):
+    int(number1)
+    int(number2)
+    return number1-number2
+input(number1)
+input(number2)
+print(substract)
