@@ -307,4 +307,6 @@ print(substract(5,4))
 
 '''Day 8'''
 
-print('memes'.capitalize())
+print('memes'.capitalize())     #Capitalize first letter
+print('memes'.center(10))       #Move the output to the right by the amount set
+print('matamata'.count('a'))    #Counts number of specific letter in word
