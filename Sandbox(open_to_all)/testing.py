@@ -91,5 +91,37 @@ d = (b**2) - (4*a*c)
 # find two solutions
 sol1 = (-b-cmath.sqrt(d))/(2*a)
 sol2 = (-b+cmath.sqrt(d))/(2*a)
-
 print('The solutions are {0} and {1}'.format(sol1, sol2))
+
+try:
+    x = int(input("give me a number between 1 and 7"))
+    print(x + 1)
+except ValueError:
+    print("this is not a number")
+
+age = int(input("how old are you?"))
+name = input("what is your name?")
+year = str((2018-age)+100)
+print(name + "you will be 100 in the year" + year)
+total = 0
+
+num = int(input("give me a number"))
+repeat = num
+product = sum(num*10**n for n in range(repeat))
+print(product)
+
+nn = int(input("pls give a natural number"))
+for x in range(1, nn+1):
+    print(x)
+
+# tic tac toe
+game = [[0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]]
+print(game)
+
+
+'''Connect 4 Game'''
+
+
+print('You win!')
