@@ -1,19 +1,25 @@
 def multi(number1, number2):
     return number1*number2
 
+
 print(multi(5, 6))
+
 
 def diff(number1, number2):
     return number1-number2
 
+
 print(diff(number1=int(input("what is the 1st")), number2=int(input("what is the next?"))))
 
+
 def sumlist():
-    sum=0
-    thislist=[1, 2, 3, 4, 5]
+    sum = 0
+    thislist = [1, 2, 3, 4, 5]
     for x in thislist:
-        sum=sum + x
+        sum = sum + x
     return sum
+
+
 print(sumlist())
 
 import math
@@ -28,13 +34,34 @@ def factorial(n):
         return 1
     else:
         return n * factorial(n-1)
+
+
 print(factorial(int(input("what is your number"))))
 
+
 def unique_list(L):
-  x=[1, 2, 5, 6, 5]
-  for a in L:
-    if a not in x:
-      x.append(a)
-  return x
+    x = [1, 2, 5, 6, 5]
+    for a in L:
+        if a not in x:
+            x.append(a)
+    return x
+
 
 print(unique_list([1, 2, 3, 3, 3, 3, 4, 5]))
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)
+
+for x in "banana":
+    print(x)
+
+while(True):
+    try:
+        x = int(input("what is your fav number?"))
+        print("you put", x)
+        print("half of that is", x/2)
+    except ValueError:
+        print("type a number pls")
+    else:
+        break
