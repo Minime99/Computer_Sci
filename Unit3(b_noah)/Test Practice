@@ -86,6 +86,7 @@ A class is a template of methods and attributes
     A attribute is a variable
     __init__ means when a object is made, this method is run automatically, before anything
 Objects are a collection of attributes and methods based on a class. The values are personalized to the object.
+An instance is a an object of that particular type of class
 '''
 
 class Cal():                                    #A class is a template to create collections of attributes and methods aka A template to create “objects”
