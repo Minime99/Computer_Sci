@@ -15,25 +15,25 @@ for x in range(1, 11):
 adj = ["red", "big", "tasty"]
 fruits = ["apple", "banana", "cherry"]
 for x in adj:
-    for y in fruits:
-        print(x, y)
+  for y in fruits:
+    print(x, y)
 
-for x in range(1, 11):
-    for y in range(1, 11):
+for x in range(1,11):
+    for y in range(1,11):
         print(x, 'times', y, 'is', x*y)
 
 total = 0
 for x in range(1000):
-    if x % 3 == 0:
+    if x%3 == 0:
         total = total + x
-    elif x % 5 == 0:
+    elif x%5 == 0:
         total = total + x
         print(total)
 print(total)
 
 numbers = []
 for x in range(1000):
-    if x % 3 == 0 or x % 5 == 0:
+    if x%3 == 0 or x%5 == 0:
         print(x)
 
 
@@ -303,3 +303,10 @@ print(add(4,5))
 def substract(number1,number2):
     return number1-number2
 print(substract(5,4))
+
+
+'''Day 8'''
+
+print('memes'.capitalize())     #Capitalize first letter
+print('memes'.center(10))       #Move the output to the right by the amount set
+print('matamata'.count('a'))    #Counts number of specific letter in word
