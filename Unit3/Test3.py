@@ -13,7 +13,8 @@ for x in range(1, 100+1):
 # 4.
 for x in range(1, 101):
     if x % 4 == 0:
-        print(x)
+        if x % 5 == 0:
+            print(x)
 # 5.
 string = str(input("give letters only pls"))
 print(string[::2])
