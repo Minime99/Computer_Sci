@@ -76,6 +76,10 @@ def circleArea(radius):                 #A number is “passed” into the funct
 print('circle area with radius 5:')
 print(circleArea(5))                    #The '5' is passed. 5 is now radius. It replaces radius because it is in brackets.
 
+def f(x):
+    return x+2
+print(f(3))
+
 
 
 #Class/Objects
@@ -97,3 +101,28 @@ class Cal():                                    #A class is a template to create
         return self.pi * (self.radius ** 2)
 a = Cal(32)                                     #This creates a 'Cal' object and names is 'a'
 print(a.area())
+
+
+
+#Date Time
+
+import datetime                     #you need this to use datetime
+x = datetime.datetime.now()         #this stores the current date and time in a variable “x”
+#The first datetime represents the import of library. The second datetime is a class. The now is a method in datetime class.
+print(x)                            #prints it out. When I made this, it was 2018-11-12 17:33:58.930763
+
+
+
+#String Formatting
+
+print('memes'.capitalize())     #Capitalize first letter
+
+print('memes'.center(10))       #Move the output to the right by the amount set
+
+print('memes'.upper())          #Make every letter in string uppercase
+
+print('MEMES'.lower())          #Make every letter in string lowercase
+
+print('matamata'.count('a'))    #Counts number of specific letter in word
+
+print('memes'.replace('e','$')) #Replaces a certain character in a string with another character

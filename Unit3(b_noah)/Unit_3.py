@@ -310,3 +310,4 @@ print(substract(5,4))
 print('memes'.capitalize())     #Capitalize first letter
 print('memes'.center(10))       #Move the output to the right by the amount set
 print('matamata'.count('a'))    #Counts number of specific letter in word
+print("memes".replace('e','$')) #Replaces a certain character in a string with another character
