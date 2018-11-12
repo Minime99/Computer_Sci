@@ -66,3 +66,34 @@ def triarea(x,y):
 triarea(10,15)
 
 #class # QUESTION:
+
+class contact:
+    def __init__(self,name,age,school,id):
+        self.name = name
+        self.age = age
+        self.school = school
+        self.id = id
+
+    def __str__(self):
+        return("your name is:"+str(self.name)+"your age is:"+str(self.age)+"your school is:"+str(self.school)+"your id is:"+str(self.id))
+
+    def  friend(self):
+        print("this is a friend")
+
+class contact1(contact):
+    def __init__(self,name,age,school,id,col):
+        self.name = name
+        self.age = age
+        self.school = school
+        self.id = id
+        self.col = col
+    def __str__(self):
+        return("your name is:"+str(self.name)+"your age is:"+str(self.age)+"your school is:"+str(self.school)+"your id is:"+str(self.id)+"yourfillis:"+str(self.col))
+
+
+person =contact("jill","43","mentor","1234")
+print(person)
+person.friend()
+
+noah = contact1("noah","1","2","4","3")
+print(noah)
