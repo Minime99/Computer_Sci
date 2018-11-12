@@ -113,7 +113,7 @@ print(product)
 nn = int(input("pls give a natural number"))
 for x in range(1, nn+1):
     print(x)
-
+'''
 # tic tac toe
 game = [[0, 0, 0],
         [0, 0, 0],
@@ -121,7 +121,8 @@ game = [[0, 0, 0],
 print(game)
 
 
-'''Connect 4 Game'''
+Connect 4 Game
 
 
 print('You win!')
+'''
