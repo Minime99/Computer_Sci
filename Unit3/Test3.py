@@ -172,7 +172,7 @@ a = Cal(32)
 print(a.area())
 
 
-class car():
+class car:
     def __init__(self):
         self.tire = "cool"
         self.wheel = "round"
