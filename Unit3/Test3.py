@@ -170,3 +170,17 @@ class Cal(object):  # a template of methods and attributes
 
 a = Cal(32)
 print(a.area())
+
+
+class car():
+    def __init__(self):
+        self.tire = "cool"
+        self.wheel = "round"
+
+    def new(self):
+        return "this car is new"
+
+
+myCar = car()
+print(myCar.tire)
+myCar.new()
