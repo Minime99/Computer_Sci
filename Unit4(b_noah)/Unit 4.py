@@ -31,3 +31,18 @@ try:
     os.remove('sampletext.txt')
 except OSError:
     print('Can not find file')
+
+#Deleting folders
+import os
+try:
+    os.remove('Faketext.txt')
+except OSError:
+    print('Can not find file')
+for x in os.listdir('Folder to remove'):
+    os.remove('Folder to remove'+g)
+os.rmdir('Folder to remove')
+
+f = open('sampletext.txt', 'w')
+for x in range(0,10):
+    f.write(str(x))
+    f.write('\n')
