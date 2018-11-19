@@ -46,3 +46,11 @@ f = open('sampletext.txt', 'w')
 for x in range(0,10):
     f.write(str(x))
     f.write('\n')
+
+
+'''Day 3        November 19'''
+
+#To make a new text file:                           x = open('name of new file.txt', 'w')
+#To open a text file in the following modes:        x = open('already exiting file.txt', 'r+a+w')
+#Read a text file and make string manipulations:    text = x.read()
+#Convert things in a text file:                     x = text.upper()    x = text.upper()    x = text.count('a') x = text.replace('a','$')
