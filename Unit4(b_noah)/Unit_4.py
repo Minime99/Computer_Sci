@@ -1,4 +1,4 @@
-''' Day 1       November 14'''
+''' Day 1       November 14
 
 #To find a file and use it somewhere
 #Type 'ls' in terminal
@@ -16,7 +16,7 @@ for line in x:
 
 
 
-'''Day 2       November 15'''
+Day 2       November 15
 
 print('Script Starting')
 f = open('sampletext.txt', 'r+w+a')
@@ -48,9 +48,26 @@ for x in range(0,10):
     f.write('\n')
 
 
-'''Day 3        November 19'''
+Day 3        November 19'''
 
 #To make a new text file:                           x = open('name of new file.txt', 'w')
 #To open a text file in the following modes:        x = open('already exiting file.txt', 'r+a+w')
 #Read a text file and make string manipulations:    text = x.read()
 #Convert things in a text file:                     x = text.upper()    x = text.upper()    x = text.count('a') x = text.replace('a','$')
+#Write in a newly created text file:                x.write('The file will contain this')   In 'w' mode
+#Append the end of a text text file:                x.write('this is added to the end')     In 'a' mode
+#Close the document                                 x.close()
+#This line is a comment
+
+f = open('surprisedpikachu.txt', 'w')
+f.close()
+f = open('surprisedpikachu.txt', 'a')
+f.write('this aint it chief')
+f.close()
+f = open('surprisedpikachu.txt', 'r')
+text = f.read()
+f.close()
+f = open('text999.txt', 'w')
+newtext = text.replace('s', '$')
+f.write(newtext)
+f.close()
