@@ -1,0 +1,27 @@
+(a) f = open("newfilename.txt","w")
+(b) f = open("alreadyexists.txt","r")
+(c) text = f.read()
+(d) u = text.upper()
+(e) l = text.lower()
+(f) c = text.count("a")
+(g) r = text.replace("a","s")
+(h) f.write("the file will contain this")
+(i) f.write("this is added to the end")
+(j) f.close()
+(k) #this line is a comment
+
+
+
+f = open("QuizReview.txt","w")
+f.write("suprised pikachu")
+f.close()
+f = open("QuizReview.txt","a")
+f.write("this aint it chief.txt")
+f.close()
+f = open("QuizReview.txt","r")
+text = f.read()
+newtext = text.replace("s","$")
+g = open("newfile.txt","w")
+g.write(newtext)
+g.close()
+ 
