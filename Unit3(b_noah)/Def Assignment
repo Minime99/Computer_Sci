@@ -1,13 +1,24 @@
 #1
+import numpy
 def multiply(number1,number2):
     return number1*number2
 print(multiply(5,4))
 
 #2
+number1 = input('Pick a number')
+number2 = input('Pick another number')
 def substract(number1, number2):
-    int(number1)
-    int(number2)
+    number1 = int(number1)
+    number2 = int(number2)
     return number1-number2
-input(number1)
-input(number2)
-print(substract)
+print(substract(number1,number2))
+
+#3
+import numpy
+list = [1, 2, 3, 4, 5]
+def sum_of_list(list):
+    list = [1, 2, 3, 4, 5]
+    return numpy.sum(list)
+print(sum_of_list(list))
+
+#4
