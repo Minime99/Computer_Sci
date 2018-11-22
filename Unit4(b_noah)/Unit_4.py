@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ''' Day 1       November 14'''
-=======
-''' Day 1       November 14
->>>>>>> e3688de79da342a623f527c58c6f6fd9d4f0e5b8
 
 #To find a file and use it somewhere
 #Type 'ls' in terminal
@@ -20,11 +16,7 @@ for line in x:
 
 
 
-<<<<<<< HEAD
 '''Day 2       November 15'''
-=======
-Day 2       November 15
->>>>>>> e3688de79da342a623f527c58c6f6fd9d4f0e5b8
 
 print('Script Starting')
 f = open('sampletext.txt', 'r+w+a')
@@ -56,11 +48,7 @@ for x in range(0,10):
     f.write('\n')
 
 
-<<<<<<< HEAD
 '''Day 3        November 19'''
-=======
-Day 3        November 19'''
->>>>>>> e3688de79da342a623f527c58c6f6fd9d4f0e5b8
 
 #To make a new text file:                           x = open('name of new file.txt', 'w')
 #To open a text file in the following modes:        x = open('already exiting file.txt', 'r+a+w')
@@ -83,3 +71,11 @@ f = open('text999.txt', 'w')
 newtext = text.replace('s', '$')
 f.write(newtext)
 f.close()
+
+
+'''Day 4        November 22'''
+
+import matplotlib.pyplot
+matplotlib.pyplot.plot([1,2,3,4])
+matplotlib.pyplot.ylabel('some numbers')
+matplotlib.pyplot.show()
