@@ -1,4 +1,0 @@
-print('Book Library Script Starting') #Just a printed statement
-x = input('What book would you like to read?') #Asking what you would like to read
-r = open('/Users/noahnadel/Desktop/Atom/Computer_Sci./Unit4(b_noah)/A_Tale_of_Two_Cities.txt','r').read() #Finds and opens the file in the directory. It also contains code to potentially read the text in the file
-print(r.count(x)) #This counts the number of characters in the file
