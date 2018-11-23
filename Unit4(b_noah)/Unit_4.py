@@ -99,8 +99,8 @@ matplotlib.pyplot.setp(l, markersize=10)
 matplotlib.pyplot.setp(l, markerfacecolor='red')
 matplotlib.pyplot.show()
 
-from matplotlib
-import pyplot, style
+import matplotlib.pyplot
+import style
 import math
 x=[]
 y=[]
@@ -108,7 +108,7 @@ for i in range(360):
     x.append(i)
 for j in range(360):
     y.append(math.cos(j*3.1415/180))
-pyplot.plot(x,y, label='y=cos(x)'')
+pyplot.plot(x,y, label='y=cos(x)')
 pyplot.title('Cosine graph')
 pyplot.ylabel('y value')
 pyplot.xlabel('x value')
