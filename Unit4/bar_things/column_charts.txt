@@ -1,0 +1,15 @@
+bar/column charts:
+comparison between items or individual data at a specific times
+stacked bar chart shows relationship of individual items to whole picture
+
+Pie Charts:
+place emphasis on a item
+
+general rule: for 7 or less portions
+
+Line Charts:
+show trends
+
+Scatter Charts:
+show uneven intervals or data clusters
+statistical methods used to determine correlation
