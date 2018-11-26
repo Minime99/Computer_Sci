@@ -24,9 +24,7 @@ def readinv():
     print(x2.read())
 
 
-def timeinoffice():
+doyouwanttime = input("do you want the time? [y,n]")
+if doyouwanttime == "y":
     x = datetime.datetime.now()
     print(x)
-
-
-timeinoffice()
