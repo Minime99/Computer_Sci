@@ -74,12 +74,13 @@ f.close()
 
 
 '''Day 4        November 22'''
-
+import matplotlib
 import matplotlib.pyplot
 matplotlib.pyplot.plot([1,2,3,4])
 matplotlib.pyplot.ylabel('some numbers')
 matplotlib.pyplot.show()
 
+import matplotlib
 import numpy
 import matplotlib.pyplot
 x = numpy.arange(0, 5, 0.1)
@@ -87,6 +88,7 @@ y = numpy.sin(x)
 matplotlib.pyplot.plot(x, y)
 matplotlib.pyplot.show()
 
+import matplotlib
 import matplotlib.pyplot
 import numpy                                        # similar to the math module
 def f(t):
@@ -114,3 +116,67 @@ pyplot.ylabel('y value')
 pyplot.xlabel('x value')
 pyplot.legend()
 pyplot.show()
+# same example below, but with bar instead of plot and range to 45 degrees
+import matplotlib
+import pyplot
+import math
+x=[]
+y=[]
+for i in range(45):
+    x.append(i)
+for j in range(45):
+    y.append(math.cos(j*3.1415/180))
+pyplot.bar(x,y, label='y=cos(x)')
+pyplot.title('Cosine graph')
+pyplot.ylabel('y value')
+pyplot.xlabel('x value')
+pyplot.legend()
+pyplot.show()
+
+import matplotlib.pyplot
+import numpy
+t = numpy.arange(0., 5., 0.2)   # evenly sampled time at 200ms intervals
+matplotlib.pyplot.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, ‘g^')
+# straight line red dash
+# quadratic blue square
+# cubic green triangles
+matplotlib.pyplot.show()
+
+#extra
+import matplotlib
+import matplotlib.pyplot
+import numpy
+
+t1 = numpy.arange(0.0, 5.0, .2)
+l = matplotlib.pyplot.plot(t1, t1**2)
+#x formula for y
+matplotlib.pyplot.show()
+
+
+#.plot is scatter or line graph
+#.bar is a bar graph
+
+'''Day 5        Nov 26'''
+
+'''
+Bar/Column Charts
+
+Comparison between items or individual data at specific times
+Stacked bar chart shows relationship of individual items to a whole picture.
+
+
+Pie Charts
+
+Place emphasis on an item.
+General rule: For 7 or less portions.
+
+
+Line Charts
+
+Show trends
+
+
+Scatter Charts
+
+Show uneven intervals or data clusters.
+'''
