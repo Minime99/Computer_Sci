@@ -158,6 +158,18 @@ matplotlib.pyplot.show()
 
 '''Day 5        Nov 26'''
 
+import matplotlib
+import matplotlib.pyplot
+import numpy
+
+t1 = numpy.arange(0.0, 5.0, .2)
+l = matplotlib.pyplot.plot(t1, t1**-2, label = 'LABEL GOES HERE')
+matplotlib.pyplot.title('THIS IS THE TITLE')
+matplotlib.pyplot.ylabel('Y AXIS LABEL')
+matplotlib.pyplot.xlabel('X AXIS LABEL')
+matplotlib.pyplot.legend()
+matplotlib.pyplot.show()
+
 '''
 Bar/Column Charts
 
