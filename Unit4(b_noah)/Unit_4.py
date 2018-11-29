@@ -102,7 +102,6 @@ matplotlib.pyplot.setp(l, markerfacecolor='red')
 matplotlib.pyplot.show()
 
 import matplotlib.pyplot
-import style
 import math
 x=[]
 y=[]
@@ -110,12 +109,12 @@ for i in range(360):
     x.append(i)
 for j in range(360):
     y.append(math.cos(j*3.1415/180))
-pyplot.plot(x,y, label='y=cos(x)')
-pyplot.title('Cosine graph')
-pyplot.ylabel('y value')
-pyplot.xlabel('x value')
-pyplot.legend()
-pyplot.show()
+matplotlib.pyplot.plot(x,y, label='y=cos(x)')
+matplotlib.pyplot.title('Cosine graph')
+matplotlib.pyplot.ylabel('y value')
+matplotlib.pyplot.xlabel('x value')
+matplotlib.pyplot.legend()
+matplotlib.pyplot.show()
 # same example below, but with bar instead of plot and range to 45 degrees
 import matplotlib
 import pyplot
@@ -126,12 +125,12 @@ for i in range(45):
     x.append(i)
 for j in range(45):
     y.append(math.cos(j*3.1415/180))
-pyplot.bar(x,y, label='y=cos(x)')
-pyplot.title('Cosine graph')
-pyplot.ylabel('y value')
-pyplot.xlabel('x value')
-pyplot.legend()
-pyplot.show()
+matplotlib.pyplot.bar(x,y, label='y=cos(x)')
+matplotlib.pyplot.title('Cosine graph')
+matplotlib.pyplot.ylabel('y value')
+matplotlib.pyplot.xlabel('x value')
+matplotlib.pyplot.legend()
+matplotlib.pyplot.show()
 
 import matplotlib.pyplot
 import numpy
@@ -162,7 +161,7 @@ import matplotlib
 import matplotlib.pyplot
 import numpy
 
-t1 = numpy.arange(0.0, 5.0, .2)
+t1 = numpy.arange(0.0, 10.0, .2)
 l = matplotlib.pyplot.plot(t1, t1**-2, label = 'LABEL GOES HERE')
 matplotlib.pyplot.title('THIS IS THE TITLE')
 matplotlib.pyplot.ylabel('Y AXIS LABEL')
