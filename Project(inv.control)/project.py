@@ -75,3 +75,5 @@ if g2 == "y":
     plt.bar(range(len(inv)), list(inv.values()), align='center')
     plt.xticks(range(len(inv)), list(inv.keys()))
     plt.show()
+
+print("program ended")  # tells the user the program is over
