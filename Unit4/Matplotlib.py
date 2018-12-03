@@ -37,5 +37,9 @@ import matplotlib
 import matplotlib.pyplot
 import numpy
 t1 = numpy.arange(0.0, 5.0, .2)
-l = matplotlib.pyplot.plot(t1, t1**2)
+l = matplotlib.pyplot.plot(t1, t1**2, label="label goes here")
+matplotlib.pyplot.title()
+matplotlib.pyplot.ylabel()
+matplotlib.pyplot.xlabel()
+matplotlib.pyplot.legend()
 matplotlib.pyplot.show()
