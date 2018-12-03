@@ -20,8 +20,8 @@ while(True):                                                    #This creates a 
     print('3) Learn who people voted for')
     print('4) View graphs of results')
     print('5) Find the time when a President is confirmed')
-    print('5) View full results')
-    print('6) Exit Program')
+    print('6) View full results')
+    print('7) Exit Program')
     x = input('What is your choice?')                           #This is where it is asked
 
     if x == '1':                                                #If the user inputs '1', this set of actions will be performed
@@ -31,23 +31,36 @@ while(True):                                                    #This creates a 
         f.write(text.upper())                                   #This makes every letter uppercase
         print(text)                                             #This prints the list of names in the file
 
+    if x == '2':
+        print('This is under maintenance. Try again in a few years when I git gud at python.')
+
+    if x == '3':
+        print('This is under maintenance. Try again in a few years when I git gud at python.')
+
     if x == '4':                                                #If the user inputs '4', this set of actions will be performed
         location = ['North','South','Trump', 'Clinton']         #This determines what the four bars are in the bar graph
-        location1 = [0.65,0.35,0.35,0.65]                       #This determines the possible percentages of each bar
+        location1 = [0.65, 0.65, 0.51, 0.49]                    #This determines the possible percentages of each bar
         bar = matplotlib.pyplot.bar(location, location1, label = 'Voters')       #This line dictates how the numbers, location, and possible presidents interact with eachother. any of the 'location' items are then given values by the 'location1' items.
         matplotlib.pyplot.title('Voter Database')               #This determines what the title of the graph will be called.
         matplotlib.pyplot.ylabel('Number of Votes')             #This determines what the y axis is called.
         matplotlib.pyplot.xlabel('President Voter Locations')   #This determines what the x axis is called.
         matplotlib.pyplot.show()                                #This shows the graph
-        break
 
     if x == '5':                                                #If the user inputs '5', this set of actions will be performed
-        x = datetime.datetime.now()                             #This asks what the time is right now
-        print('The President will be inaugurated at', x)        #This prints a string that tells when the president is inaugurated.
+        y = datetime.datetime.now()                             #This asks what the time is right now
+        print('The President will be inaugurated at', y)        #This prints a string that tells when the president is inaugurated.
+
+
+    if x == '6':
+        print('This is under maintenance. Try again in a few years when I git gud at python.')
+
+
+    elif x == '7':                                                #This stops the program if they press a button that is not one of the designated numbers.
         break
 
-    else:                                                       #This stops the program if they press a button that is not one of the designated numbers.
-        break
+    else:                                                       #This makes sure that you select a valid option
+        print('Invalid input')
+
 
 
 
@@ -103,6 +116,7 @@ f.close()
 
 cd Desktop/Atom/'Computer_Sci.'/'Unit4(b_noah)'/'Business Application Project'
 python3 'Business Application Project.py'
+python3 'Practice Voter Database'
 '''
 '''
 import math
@@ -137,6 +151,7 @@ while(True):
         print('voters.txt')
         f.close()
 
+#Old
     elif x == '2':
         f = open('voters.txt', 'r+')
         text = f.read()
@@ -147,35 +162,71 @@ while(True):
         print('voters.txt')
         f.close()
 
+elif x == '2':
+    f = open('voters.txt', 'r+')
+    text = f.read()
+    text = text.title()
+    f.write(text)
+    text.append(', North' or ', South')
+    f.write(text)
+    print('voters.txt')
+    f.close()
+#New
+    if x == '2':
+        f = open('voters.txt', 'r+')
+        text = f.read()
+        text = text.title()
+        f.write(text)
+        location = 'voters.txt'
+        with open(location, 'r+') as fp:
+            lines = fp.read().splitlines()
+        with open(location, 'r+') as fp:
+            for name in lines:
+                if linenumber ends in odd number:
+                    print(name + ', North')
+                if line number ends in even number:
+                    print(name + ', South')
+        f.write(text)
+        print('voters.txt')
+        f.close()
+
+    if x == '2':
+        f = open('voters.txt', 'r+')
+        text = f.read()
+        text = text.title()
+        f.write(text)
+        location = 'voters.txt'
+        with open(location, 'r+') as fp:
+            lines = fp.read().splitlines()
+        with open(location, 'r+') as fp:
+            for name in lines:
+                if
+                print(name + ', North')
+        text.append(', North' or ', South')
+        f.write(text)
+        print('voters.txt')
+        f.close()
+
     elif x == '3':
         f = open('voters.txt', 'r+')
         text = f.read()
         text = text.title()
         f.write(text.upper())
-        '''
-'''
         if random.randint(1,100)<50:
             text = text + ', North'
         else:
             text = text + ', South'
-            if text.count(', North')>0:
-                if random.randint(1,100)<66:
-                    text = text + ', voted for Clinton'
-            if text.count(', South')>0:
-                if random.randint(1,100)<66:
-                    text = text + ', voted for Trump'
+        if text.count(', North')>0:
+            if random.randint(1,100)<66:
+                text = text + ', voted for Clinton'
+        if text.count(', South')>0:
+            if random.randint(1,100)<66:
+                text = text + ', voted for Trump'
         print('voters.txt')
         f.write(text)
         '''
 '''
-        f.close()
 
-    else:
-        break
-#Graphs
-
-'''
-'''
 pseudo code graphs
 Stacked bar graph of who wins by votes
 Bar graph of people from north or south
@@ -188,8 +239,14 @@ Figure out a way to use the information from the previously performed function (
 
 
 '''
-extra
-    if x == 4:
+extra code
+
+filepath = "hole.txt"
+with open(filepath) as fp:
+    lines = fp.read().splitlines()
+with open(filepath, "w") as fp:
+    for line in lines:
+        print(line + "#", file=fp)
 
 A = [5., 30., 45., 22.]
 B = [5., 25., 50., 20.]
