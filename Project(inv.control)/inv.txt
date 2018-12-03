@@ -1,1 +1,1 @@
-{'Common nails': 11, 'Box nails': 5, 'Drywall nails': 20, 'Double headed nails': 2, 'Roofing nails': 13, 'nothing': 100}
+{'Common nails': 11, 'Box nails': 5, 'Drywall nails': 20, 'Double headed nails': 2, 'Roofing nails': 13, 'hi': 13}

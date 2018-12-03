@@ -1,4 +1,3 @@
-
 import datetime
 import matplotlib
 import matplotlib.pyplot as plt  # all of the imports to run the code, for showing the time and making the graph
