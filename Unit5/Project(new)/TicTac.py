@@ -10,7 +10,7 @@ def start():
     tk = Tk()
     tk.title("Tic Tac Toe")
     tk.update()
-    file = '/Users/noahfedosoff_S/Documents/Projects/Unit5/Refreshing Elevator music.mp3'
+    file = 'Refreshing Elevator music.mp3'
     pygame.init()
     pygame.mixer.init()
     pygame.mixer.music.load(file)
