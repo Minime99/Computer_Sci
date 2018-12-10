@@ -58,6 +58,8 @@ def start():  # what goes on when the game is started
                 tk.destroy()
             except:
                 pass
+
+
 # code to set how the buttons look, say, and interact
     button1 = Button(tk, text=" ", font=('Helvetica 10 bold italic'), height=4,
                      width=8, command=lambda: play(button1))
