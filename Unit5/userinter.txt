@@ -25,3 +25,33 @@ Graphic output:
 - plots...bar, column, pie, line, and scatter diagrams
 Narrative:
 - sentences/paragraphs
+
+User interface design(UI) is the design of user interfaces with the focus on
+maximizing usability and the user experience -easy_to_use input/output
+
+User experience(UX) design is the process of creating products that provide
+meaningful and relevant experiences to users -feel good while using
+
+localization:
+the process of translating your app into multiple languages
+
+internationalization:
+the process of making your app able to adept and handle content in different
+languages, regions, and cultures
+
+some languages are read/written right to left
+
+for right to left languages mirror the user interface
+
+forward and backward buttons in same location
+
+phone numbers stay the same
+
+if not in english already make English a priority. english literacy is
+especially high in the smartphone user portion of the population
+
+Green:
+Go/safe to proceed (stoplight logic)
+healthy/environmentally friendly (western regions)
+
+Chinese stock market uses red=gains,green=losses
