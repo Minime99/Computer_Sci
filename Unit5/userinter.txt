@@ -1,7 +1,27 @@
-"""
+#Note for quiz
+
 text boxes: fill-in-the blank
 Radio buttons: allow you to select ONE option
 checkboxes: can select as many as you want
 Drop-down menus: Reveal choices when clicked, allow you to select one
-Toggles: Always have one or the other slected (best for on/off)
-"""
+Toggles: Always have one or the other selected (best for on/off)
+
+Data capture:
+
+identification and recording of data.
+
+Data entry:
+
+converting data into computer-readable form.
+
+external outputs: are those which leave the system to trigger actions or confirm actions
+internal outputs: are those which stay inside the system to support user(management reporting or decision support)
+
+tabular output:
+- columns of text and numbers
+zone output:
+- designated areas of form for text and numbers
+Graphic output:
+- plots...bar, column, pie, line, and scatter diagrams
+Narrative:
+- sentences/paragraphs
