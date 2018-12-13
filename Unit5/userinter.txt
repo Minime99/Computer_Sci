@@ -79,3 +79,12 @@ SCADA
 {Data Server- handles process data control activities
 
 Human machine interface (work station) HMI
+
+Designing for the mobile environment:
+-------------------------------------
+you don't have as much screen real estate for mobile devices as you do for PCs
+and laptops
+don't overwhelm your users - respect the small screen space. keep content to a
+minimum
+Reduce the inputs required from users
+Remember mobile connections are not stable
