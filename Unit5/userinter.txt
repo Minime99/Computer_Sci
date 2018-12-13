@@ -54,4 +54,15 @@ Green:
 Go/safe to proceed (stoplight logic)
 healthy/environmentally friendly (western regions)
 
-Chinese stock market uses red=gains,green=losses
+Chinese stock market uses red=gains, green=losses
+
+avoid words and numbers in icons
+
+SCADA = supervisory control and data acquisition is a subset of ICS
+
+ICS = industrial control system
+
+SCADA
+{Two layers:
+{Client- Man machine interaction
+{Data Server- handles process data control activities
