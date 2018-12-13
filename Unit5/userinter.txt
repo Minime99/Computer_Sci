@@ -1,4 +1,5 @@
-#Note for quiz
+#Notes for quiz
+---------------
 
 text boxes: fill-in-the blank
 Radio buttons: allow you to select ONE option
@@ -7,17 +8,23 @@ Drop-down menus: Reveal choices when clicked, allow you to select one
 Toggles: Always have one or the other selected (best for on/off)
 
 Data capture:
+-------------
 
 identification and recording of data.
 
 Data entry:
+-----------
 
 converting data into computer-readable form.
 
-external outputs: are those which leave the system to trigger actions or confirm actions
-internal outputs: are those which stay inside the system to support user(management reporting or decision support)
+external outputs: are those which leave the system to trigger actions or confirm
+actions
+
+internal outputs: are those which stay inside the system to support user
+(management reporting or decision support)
 
 tabular output:
+---------------
 - columns of text and numbers
 zone output:
 - designated areas of form for text and numbers
@@ -33,9 +40,11 @@ User experience(UX) design is the process of creating products that provide
 meaningful and relevant experiences to users -feel good while using
 
 localization:
+-------------
 the process of translating your app into multiple languages
 
 internationalization:
+---------------------
 the process of making your app able to adept and handle content in different
 languages, regions, and cultures
 
@@ -51,6 +60,7 @@ if not in english already make English a priority. english literacy is
 especially high in the smartphone user portion of the population
 
 Green:
+------
 Go/safe to proceed (stoplight logic)
 healthy/environmentally friendly (western regions)
 
@@ -63,6 +73,9 @@ SCADA = supervisory control and data acquisition is a subset of ICS
 ICS = industrial control system
 
 SCADA
+-----
 {Two layers:
 {Client- Man machine interaction
 {Data Server- handles process data control activities
+
+Human machine interface (work station) HMI
