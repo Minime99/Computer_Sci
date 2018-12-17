@@ -88,3 +88,6 @@ don't overwhelm your users - respect the small screen space. keep content to a
 minimum
 Reduce the inputs required from users
 Remember mobile connections are not stable
+battery usage
+bandwidth use
+no mouse

@@ -113,6 +113,15 @@ print(product)
 nn = int(input("pls give a natural number"))
 for x in range(1, nn+1):
     print(x)
+
+x = 100
+y = int(input("give a number"))
+if y == 100:
+    print("why so basic")
+
+
+# code is closed for now as better method was discovered
+# free if someone wants to try their hand at it
 '''
 # tic tac toe
 game = [[0, 0, 0],
