@@ -1,0 +1,32 @@
+ASCII: American Standard code for information interchange
+(128 chars)
+
+Unicode: A way to represent almost any characters with longer codes then ASCII
+(>1million)
+
+CPU: central processing unit (does calculations)
+GPU: graphics processing unit (produces video)
+Network: several computers connected and able to communicate
+
+Waterfall:
+1. Analysis
+2. Design
+3. Implement
+4. Maintenance
+
+one step must follow another's completion
+whole project designed before any implementation
+
+Iterative:
+- Build a small working piece
+- add onto it with other pieces in small "increments"
+- until you have a large working project
+
+Interpreter:
+* looks at and executes line by line
+* python is an example
+* the code will run perfectly UNTIL it gets to the line with an error
+Compiler:
+* looks at all code at connected
+* execution is faster but it takes longer to start up ("compile")
+* java is an example
