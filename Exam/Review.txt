@@ -30,3 +30,34 @@ Compiler:
 * looks at all code at connected
 * execution is faster but it takes longer to start up ("compile")
 * java is an example
+
+"""Operation	What it returns
+
+   x + y	        Sum of x and y
+   x - y	        Difference of x and y
+   -x	            Changed sign of x
+   +x	            Identity of x
+   x * y	        Product of x and y
+   x / y	        Quotient of x and y
+   x // y	        Quotient from floor division of x and y
+   x % y	        Remainder of x / y
+   x ** y	        x to the y power
+"""
+
+casting:
+change a string to an int or vice versa
+
+whole number:
+integer
+
+String:
+"letters"
+
+float:
+any number with .
+
+Boolean:
+true/false
+
+Assignment:
+declare a variable "a=hello"
