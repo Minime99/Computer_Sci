@@ -138,3 +138,9 @@ while (x < 11):
 for x in range(1, 11, 2):
     print(x)
 # will print out 1-10 (from 1 by 2s every time and not including 11)
+
+num = [1, 2, 3, 4]
+for i in num:
+    for j in num:
+        print(i*j)
+# multiplies the nums in the list to 16
