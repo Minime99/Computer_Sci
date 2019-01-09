@@ -12,6 +12,7 @@ print(name.upper())
 print(name.lower())
 # prints out name again in lower case
 
+
 """
 SLICING
 -------
@@ -117,3 +118,23 @@ then the other two options.
 <
 ==
 !=
+
+
+"""
+FOR & WHILE
+-----------
+"""
+
+for x in range(1, 11):
+    print(x)
+# will print out 1-10 (not including 11)
+
+x = 1
+while (x < 11):
+    print(x)
+    x = x+1
+# is the same as the above for statement (just using a different method)
+
+for x in range(1, 11, 2):
+    print(x)
+# will print out 1-10 (from 1 by 2s every time and not including 11)
