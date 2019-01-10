@@ -112,12 +112,14 @@ then the other two options.
 """
 
 # things that can check for truw and false
+"""
 >=
 >
 <=
 <
 ==
 !=
+"""
 
 
 """

@@ -61,3 +61,10 @@ true/false
 
 Assignment:
 declare a variable "a=hello"
+
+Localization:
+the process of translating your app into different languages
+
+Internationalization:
+The process of making your app able to adapt and handle content in different
+languages, regions, and cultures
