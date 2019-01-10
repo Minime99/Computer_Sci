@@ -144,3 +144,32 @@ for i in num:
     for j in num:
         print(i*j)
 # multiplies the nums in the list to 16
+
+
+"""
+CLASS
+-----
+"""
+
+
+class Dictator:
+    def __int__(self):  # initialization called when a dictator is created
+        self.warcrimes = False
+        self.yearsofreign = 20
+        self.country = "soviet"
+        # "attributes" are stored in each object
+
+    def getbowedto(self):
+        print("your subjects love you")
+        # "method" are the actions the object has the ability to do
+
+
+Stalin = Dictator()  # creating a dictator object
+Stalin.warcrimes = True
+print(Stalin.warcrimes)
+
+Mao = Dictator()  # creating a dictator object
+Mao.country = "china"
+print(Mao.country)
+Mao.getbowedto()
+# Stalin and Mao are "instance of dictator"
