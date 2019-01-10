@@ -173,3 +173,27 @@ Mao.country = "china"
 print(Mao.country)
 Mao.getbowedto()
 # Stalin and Mao are "instance of dictator"
+
+
+"""
+PASSING
+"""
+# use this if you want to set what attributes are before hand
+
+
+class Dictator:
+    def __init__(self, w, c):  # initialization called when a dictator is created
+        self.warcrimes = False
+        self.yearsofreign = w
+        self.country = c
+        # "attributes" are stored in each object
+
+    def getbowedto(self):
+        print("your subjects love you")
+        # "method" are the actions the object has the ability to do
+
+
+Stalin = Dictator(24, "Soviet")  # creating a dictator object
+print(Stalin.yearsofreign)
+print(Stalin.country)
+# Stalin and Mao are "instance of dictator"
