@@ -177,6 +177,7 @@ Mao.getbowedto()
 
 """
 PASSING
+-------
 """
 # use this if you want to set what attributes are before hand
 
@@ -197,3 +198,35 @@ Stalin = Dictator(24, "Soviet")  # creating a dictator object
 print(Stalin.yearsofreign)
 print(Stalin.country)
 # Stalin and Mao are "instance of dictator"
+
+"""
+SUPERCLASS
+----------
+"""
+
+# make a subclass that inherits things from the superclass
+
+
+class Russian(Dictator):
+    def __init__(self, o):
+        self.oil = o
+        Dictator.__init__(self, 12, "ok")
+
+
+putin = Russian(1000)
+print(putin.yearsofreign)
+print(putin.oil)
+
+"""
+TRY/EXCEPT/ELSE/FINALLY
+-----------------------
+"""
+
+try:
+    age = int(input("how old are you"))
+except:
+    print("non-number entered")
+else:
+    print("this runs if there are no errors")
+finally:
+    print("this prints out no matter what")
