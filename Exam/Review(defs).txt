@@ -68,3 +68,26 @@ the process of translating your app into different languages
 Internationalization:
 The process of making your app able to adapt and handle content in different
 languages, regions, and cultures
+
+Ethical Concerns(automation/all)
+--> increased technology
+* more robots = take our jobs
+* more tech = more weaponry
+* faster computer = crack password faster
+* AI can impersonate people
+-> social isolation
+
+Disposal of waste
+- burning in Africa
+- landfills
+- planned obsolescence
+Energy use
+- crypto mining
+- turn off at night
+Designing for mobile devices
+- small size
+- no mouse keyboard
+- mobile connection
+- less memory
+- less graphics
+- battery use
