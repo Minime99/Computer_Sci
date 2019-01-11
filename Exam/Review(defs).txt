@@ -1,4 +1,4 @@
-ASCII: American Standard code for information interchange
+languageASCII: American Standard code for information interchange
 (128 chars)
 
 Unicode: A way to represent almost any characters with longer codes then ASCII
@@ -91,3 +91,8 @@ Designing for mobile devices
 - less memory
 - less graphics
 - battery use
+Isolated communities
+- slow internet access
+- low bandwidth
+outdated devices
+- very localized language
