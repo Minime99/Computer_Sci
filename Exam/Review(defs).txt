@@ -27,7 +27,7 @@ Interpreter:
 * python is an example
 * the code will run perfectly UNTIL it gets to the line with an error
 Compiler:
-* looks at all code at connected
+* looks at all code as connected
 * execution is faster but it takes longer to start up ("compile")
 * java is an example
 
