@@ -1,4 +1,4 @@
-languageASCII: American Standard code for information interchange
+disabilitieslanguageASCII: American Standard code for information interchange
 (128 chars)
 
 Unicode: A way to represent almost any characters with longer codes then ASCII
@@ -96,3 +96,6 @@ Isolated communities
 - low bandwidth
 outdated devices
 - very localized language
+
+AODA:
+Accessibility for Ontario's with disabilities act
