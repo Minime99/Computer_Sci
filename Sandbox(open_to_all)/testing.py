@@ -11,6 +11,7 @@
    x % y	        Remainder of x / y
    x ** y	        x to the y power
 """
+
 FirstInt = input("Number1")
 SecondInt = input("Number2")
 Result = int(FirstInt) + int(SecondInt)
@@ -122,16 +123,40 @@ if y == 100:
 
 # code is closed for now as better method was discovered
 # free if someone wants to try their hand at it
-'''
-# tic tac toe
-game = [[0, 0, 0],
-        [0, 0, 0],
-        [0, 0, 0]]
-print(game)
 
+class calculate():
 
-Connect 4 Game
+    def __init__(self,one,two):
+        self.one = one
+        self.two = two
 
+    def times(self):
+        print (self.one * self.two)
+    def add(self):
+        print (self.one + self.two)
+    def sub(self):
+        print (self.one - self.two)
+    def div(self):
+        print (self.one / self.two)
 
-print('You win!')
-'''
+for1 = calculate(int(input("first")), int(input("next")))
+x = input("what do you want to to with them?")
+
+i = "first_time"
+while i == "first_time" or "wrong":
+    x = input("what do you want to to with them?")
+    if x == "multiply":
+        for1.times()
+        break
+    elif x == "add":
+        for1.add()
+        break
+    elif x == "subtract":
+        for1.sub()
+        break
+    elif x == "divide":
+        for1.div()
+        break
+    else:
+        print("Invalid")
+        i = "wrong"
